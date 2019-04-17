@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" layoutX="59.0" prefHeight="670.0" prefWidth="629.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestionassurances.SinController">
+   <children>
+      <Pane layoutX="591.0" layoutY="-7.0" prefHeight="677.0" prefWidth="40.0" style="-fx-background-color: #6747cd;" />
+      <Pane layoutX="-98.0" layoutY="-15.0" onMouseClicked="#vid" prefHeight="685.0" prefWidth="83.0" style="-fx-background-color: #6747cd;" />
+      <JFXTextField fx:id="datesini" alignment="CENTER" layoutX="85.0" layoutY="315.0" prefHeight="26.0" prefWidth="152.0" promptText="Date Sinistre" />
+      <TableView fx:id="TableViewAffichage" layoutX="-15.0" layoutY="14.0" onMouseClicked="#vid" prefHeight="200.0" prefWidth="591.0" AnchorPane.rightAnchor="40.0">
+        <columns>
+          <TableColumn fx:id="sinistre" prefWidth="75.0" text="refSinistre" />
+          <TableColumn fx:id="datesin" prefWidth="75.0" text="Date Sinistre" />
+            <TableColumn fx:id="datedep" prefWidth="75.0" text="Date depot" />
+            <TableColumn fx:id="assureur" prefWidth="75.0" text="assureur" />
+            <TableColumn fx:id="expert" prefWidth="75.0" text="expert" />
+            <TableColumn fx:id="client" prefWidth="75.0" text="client" />
+            <TableColumn fx:id="lieu" prefWidth="75.0" text="lieu" />
+            <TableColumn fx:id="compte" prefWidth="75.0" text="Compte Rendu" />
+        </columns>
+      </TableView>
+      <Button fx:id="modifier" layoutX="29.0" layoutY="521.0" mnemonicParsing="false" onMouseClicked="#modifier" prefHeight="40.0" prefWidth="112.0" style="-fx-background-color: #6747cd;" text="Modifier" textFill="WHITE" />
+      <Button fx:id="supprimer" layoutX="404.0" layoutY="521.0" mnemonicParsing="false" onMouseClicked="#supprimer" prefHeight="40.0" prefWidth="112.0" style="-fx-background-color: #6747cd;" text="Supprimer" textFill="WHITE" />
+      <JFXTextField fx:id="datedepo" layoutX="404.0" layoutY="319.0" promptText="Date Depôt" />
+      <JFXTextField fx:id="comptee" layoutX="93.0" layoutY="418.0" promptText="Compte Rendu" />
+      <JFXTextField fx:id="lieuu" layoutX="404.0" layoutY="418.0" promptText="Lieu du Sinistre" />
+      <JFXTextField fx:id="reff" layoutX="222.0" layoutY="250.0" visible="false" />
+      <JFXTextField fx:id="search" layoutX="197.0" layoutY="541.0" />
+   </children>
+</AnchorPane>

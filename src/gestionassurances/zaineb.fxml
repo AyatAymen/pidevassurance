@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestionassurances.MediaplayerController">
+   <bottom>
+      <VBox prefHeight="47.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button onAction="#hundleButtonAction" mnemonicParsing="false" prefHeight="37.0" prefWidth="68.0" text="Openfile" />
+                  <Button onMouseClicked="#playy" prefHeight="37.0" prefWidth="57.0" text="Play" />
+                  <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="55.0" text="Pause" />
+                  <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="57.0" text="Stop" />
+                  <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="61.0" text="&lt;&lt;&lt;" />
+                  <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="61.0" text="&lt;&lt;" />
+                  <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="64.0" text="&gt;&gt;" />
+                  <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="64.0" text="&gt;&gt;&gt;" />
+                  <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="110.0" text="exit" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </bottom>
+   <center>
+      <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <MediaView fx:id="mediaView" fitHeight="200.0" fitWidth="200.0" />
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>
